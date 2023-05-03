@@ -1,0 +1,2 @@
+<?php
+// Silenciar cualquier salida
