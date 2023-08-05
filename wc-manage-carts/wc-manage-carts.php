@@ -1,14 +1,14 @@
 <?php
 /*
 Plugin Name: WooCommerce Manage Carts
-Version: 1.0.0
+Version: 1.0.1
 Description: Plugin personalizado para listar carritos activos y abandonados de WC
 Author: Cristian Moyano
 */
 
 
 function wc_manage_carts_enqueue_admin_script() {
-    wp_enqueue_script( 'wp-wsp-order-script', plugin_dir_url( __FILE__ ) . '/assets/js/main.js', array(), '1.0' );
+    wp_enqueue_script( 'wp-manage-carts-script', plugin_dir_url( __FILE__ ) . '/assets/js/main.js', array(), '1.0' );
 }
 // Cargar script
 add_action('admin_enqueue_scripts', 'wc_manage_carts_enqueue_admin_script');
